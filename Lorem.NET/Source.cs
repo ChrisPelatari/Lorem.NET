@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace LoremNET
 {
@@ -12,7 +13,17 @@ namespace LoremNET
         }
 
         // https://stackoverflow.com/questions/421616/
-        internal static IEnumerable<string> WordList(bool includePunctuation) => includePunctuation ? Rearrange(Lipsum.Text) : Rearrange(new string(Lipsum.Text.Where(c => !char.IsPunctuation(c)).ToArray()));
+        internal static IEnumerable<string> WordList(bool includePunctuation) => includePunctuation ? Rearrange(Lipsum.Text) : Rearrange(Depunctuate());
+
+        internal static string Depunctuate()
+        {
+            var s = from ch in Lipsum.Text
+                    where !char.IsPunctuation(ch)
+                    select ch;
+
+            var bytes = Encoding.ASCII.GetBytes(s.ToArray());
+            return Encoding.ASCII.GetString(bytes);
+        }
 
         public static void Update(string text)
         {
