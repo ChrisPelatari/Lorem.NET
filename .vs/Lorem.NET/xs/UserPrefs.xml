@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{3A28CF73-F2F5-467B-A7B6-E822A6653203}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lorem.NET/Source.cs">
+    <Files>
+      <File FileName="Lorem.NET/lipsum.cs" Line="10" Column="1" />
+      <File FileName="Lorem.NET/Source.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lorem.NET" expanded="True">
+            <Node name="Lorem.NET" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Source.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Examples PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
